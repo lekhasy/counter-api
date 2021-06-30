@@ -30,5 +30,12 @@ namespace counter.Controllers
         {
             Counter = Counter + amount;
         }
+
+
+        [HttpPost("reset")]
+        public void Reset(int amount)
+        {
+            Counter = 0;
+        }
     }
 }
